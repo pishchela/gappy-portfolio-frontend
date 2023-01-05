@@ -1,0 +1,42 @@
+<div class="details">
+  <div class="details-heading">
+    <h1>details</h1>
+    <h2>about me</h2>
+  </div>
+  <div class="details-section" *ngFor="let detail of detailsList">
+    <h5>{{ detail.title }}</h5>
+    <ng-container
+      *ngIf="!isListWithDescription(detail)"
+      [ngTemplateOutlet]="commonListTemplate"
+      [ngTemplateOutletContext]="{ detail: detail }"
+    >
+    </ng-container>
+
+    <ng-container
+      *ngIf="isListWithDescription(detail)"
+      [ngTemplateOutlet]="descriptionIncludedList"
+      [ngTemplateOutletContext]="{ detail: detail }"
+    >
+    </ng-container>
+  </div>
+</div>
+
+<ng-template #commonListTemplate let-detail="detail">
+  <ul *ngIf="detail?.list?.length">
+    <li *ngFor="let item of detail?.list">
+      {{ item.name }}
+    </li>
+  </ul>
+</ng-template>
+
+<ng-template #descriptionIncludedList let-detail="detail">
+  <ul *ngIf="detail?.list?.length" class="description-included">
+    <li *ngFor="let item of detail?.list">
+      {{ item.name }}
+      <dl>
+        <dt *ngIf="item?.description">{{ item.description }}</dt>
+        <!--        <dd *ngIf="item?.subDescription">{{ item.subDescription }}</dd>-->
+      </dl>
+    </li>
+  </ul>
+</ng-template>

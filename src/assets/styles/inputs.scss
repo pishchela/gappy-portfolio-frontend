@@ -1,0 +1,32 @@
+@import './theme';
+@import './functions';
+
+textarea {
+  resize: vertical;
+  padding-top: 32px;
+}
+
+input {
+  padding-top: 8px;
+}
+
+textarea,
+input {
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box;
+
+  padding-left: 40px;
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 99%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--bodyBackground);
+  &::placeholder {
+    color: var(--bodyBackground);
+    opacity: 0.4;
+  }
+}

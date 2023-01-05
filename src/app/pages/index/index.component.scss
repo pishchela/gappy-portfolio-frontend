@@ -1,0 +1,14 @@
+@import '../../../assets/styles/theme';
+@import '../../../assets/styles/functions';
+
+.header-logo {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  svg {
+    width: 100%;
+    height: auto;
+    path.logo {
+      fill: var(--color);
+    }
+  }
+}

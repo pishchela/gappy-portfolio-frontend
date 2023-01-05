@@ -1,0 +1,25 @@
+@import '../../../../assets/styles/theme';
+@import '../../../../assets/styles/functions';
+
+.separator {
+  margin-bottom: 180px;
+  width: 100%;
+  .separator-line {
+    width: 100%;
+    border-top: 2px solid;
+    border-color: var(--color);
+    margin-bottom: 8px;
+  }
+  .separator-links {
+    color: var(--color);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      font-size: 20px;
+      line-height: 91%;
+      letter-spacing: -0.02em;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@font-face {
+  font-family: Ogg;
+  src: url('../fonts/Ogg-RegularItalic.ttf');
+}
+
+@font-face {
+  font-family: Syne;
+  src: url('../fonts/Syne-Regular.ttf');
+}
+
+p {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 91%;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+h1,
+h2,
+h5 {
+  margin: 0;
+  width: fit-content;
+}
+
+h1 {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 116px;
+  line-height: 79%;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: Ogg, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 146px;
+  line-height: 64%;
+  text-align: center;
+  letter-spacing: -0.1em;
+  text-transform: lowercase;
+}
+
+h5 {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 91%;
+  letter-spacing: -0.02em;
+}
+
+h3 {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  margin: 0;
+}
+
+li {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 113%;
+  letter-spacing: -0.03em;
+}
+
+dl {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 113%;
+  letter-spacing: -0.03em;
+}
+
+a {
+  cursor: pointer;
+  width: fit-content;
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  border-bottom: 2px solid transparent;
+  &:hover {
+    border-bottom: 2px solid var(--color);
+  }
+}
+
+button {
+  font-family: Syne, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

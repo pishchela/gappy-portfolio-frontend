@@ -1,0 +1,15 @@
+<header>
+  <div>
+    <h1>Kate Hapiienko is a</h1>
+    <h1>Ui designer, Illustrator,</h1>
+    <h2>nice person</h2>
+  </div>
+  <div class="header-links-container">
+    <div class="header-links">
+      <a (click)="scrollIntoView.emit(scrollToSections.CASES)">cases</a>
+      <a (click)="scrollIntoView.emit(scrollToSections.ABOUT_ME)">about me</a>
+      <a (click)="scrollIntoView.emit(scrollToSections.CONTACT)">contact</a>
+    </div>
+  </div>
+  <happi-change-theme></happi-change-theme>
+</header>

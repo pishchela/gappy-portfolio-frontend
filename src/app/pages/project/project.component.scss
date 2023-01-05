@@ -1,0 +1,22 @@
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  button {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    color: var(--color);
+    width: fit-content;
+    border: none;
+    a {
+      font-size: 20px;
+      line-height: 91%;
+      letter-spacing: -0.02em;
+    }
+    svg {
+      margin-right: 16px;
+    }
+  }
+}

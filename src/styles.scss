@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'assets/styles/theme';
+@import 'assets/styles/functions';
+@import 'assets/styles/fonts';
+@import 'assets/styles/inputs';
+
+body {
+  transition: background-color 0.5s linear, color 0.5s linear;
+  -webkit-transition: background-color 0.5s linear, color 0.5s linear;
+  -moz-transition: background-color 0.5s linear, color 0.5s linear;
+  -o-transition: background-color 0.5s linear, color 0.5s linear;
+
+  background-color: var(--bodyBackground);
+  color: var(--color);
+  button {
+    cursor: pointer;
+    color: var(--color);
+  }
+  // margin: 40px 24px 16px 24px;
+  margin: 40px 1.66vw 16px 1.66vw;
+}
+
+path.fill-color {
+  fill: var(--color);
+}
+
+footer {
+  margin-top: 56px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}

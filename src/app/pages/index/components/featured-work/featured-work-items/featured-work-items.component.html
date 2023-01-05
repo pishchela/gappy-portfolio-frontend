@@ -1,0 +1,12 @@
+<h6>
+  One-page concepts invest in people that we like, trust, admire, and who have
+  set out to build iconic organizations in the most fundamental categories.
+</h6>
+
+<div class="featured-list">
+  <div class="featured-item" *ngFor="let item of items" routerLink="/project/1">
+    <img src="{{ item.imgSrc }}" alt="image" />
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.subtitle }}</p>
+  </div>
+</div>

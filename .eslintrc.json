@@ -1,0 +1,97 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "projects/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts"
+      ],
+      "parserOptions": {
+        "project": [
+          "tsconfig.json",
+          "e2e/tsconfig.json"
+        ],
+        "createDefaultProgram": true
+      },
+      "extends": [
+        "plugin:@angular-eslint/recommended",
+        "plugin:@angular-eslint/template/process-inline-templates"
+      ],
+      "rules": {
+        "@angular-eslint/component-selector": [
+          "error",
+          {
+            "prefix": ["app", "happi"],
+            "style": "kebab-case",
+            "type": "element"
+          }
+        ],
+        "space-unary-ops": "error",
+        "no-multi-spaces": "error",
+        "@angular-eslint/directive-selector": [
+          "error",
+          {
+            "prefix": ["app", "cl"],
+            "style": "camelCase",
+            "type": "attribute"
+          }
+        ],
+        "import/prefer-default-export": "off",
+        "import/no-unresolved": "off",
+        "lines-between-class-members": "off",
+        "no-unused-vars": "off",
+        "@typescript-eslint/no-unused-vars": "error",
+        "prefer-object-spread": "off",
+        "no-restricted-properties": "off",
+        "@typescript-eslint/explicit-function-return-type": [
+          "error",
+          {
+            "allowExpressions": true
+          }
+        ],
+        "@typescript-eslint/no-var-requires": "warn",
+        "@typescript-eslint/ban-types": "warn",
+        "@typescript-eslint/no-implied-eval": "warn",
+        "no-prototype-builtins": "warn",
+        "max-len": ["error", { "code": 140 }],
+        "import/extensions": "off", /// ?
+        "no-shadow": "off",
+        "no-console": "error",
+        "no-else-return": "off",
+        "no-param-reassign": "warn",
+        "prefer-template": "off",
+        "@typescript-eslint/no-shadow": "error",
+        "no-useless-constructor": "off",
+        "@typescript-eslint/no-useless-constructor": ["error"],
+        "no-empty-function": "off",
+        "@typescript-eslint/no-empty-function": ["error"],
+        "class-methods-use-this": "off",
+        "prefer-destructuring": ["error", {
+          "array": false,
+          "object": true
+        }],
+        "max-classes-per-file": "off",
+        "import/order": "off",
+        "arrow-body-style": "off",
+        "comma-dangle": ["warn", "always-multiline"]
+      }
+    },
+    {
+      "files": [
+        "*.html"
+      ],
+      "extends": [
+        "plugin:@angular-eslint/template/recommended"
+      ],
+      "rules": {}
+    }
+  ],
+  "globals": {
+    "document": true,
+    "window": true,
+    "sessionStorage": true,
+    "requestAnimationFrame": true
+  }
+}
